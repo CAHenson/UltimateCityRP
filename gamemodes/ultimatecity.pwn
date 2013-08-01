@@ -115,7 +115,7 @@ public OnGameModeInit()
 	format(Line, sizeof(Line), "** %i\t<->\tLabels Loaded From\t<->\tDLabels.txt **",Labels);
 	printf(Line);
 	print("=====================================================================\n");
-	print("Starter / Blank gamemode by L3th4l loaded!");
+	print("Ultimate City RP!");
 	return 1;
 }
 //==============================================================================
@@ -149,7 +149,7 @@ public OnPlayerConnect(playerid)
     AddMapIconFromFile(ICON_FILE_NAME);
     
     new CString[50];
-    format(CString, sizeof(CString), "Player: %s(%d) has joined the fun!", pName(playerid), playerid);
+    format(CString, sizeof(CString), "Player: %s(%d) has joined ultimate city!", pName(playerid), playerid);
     SendClientMessageToAll(COLOR_GREY, CString);
     
 	new File[50];
@@ -180,7 +180,7 @@ public OnPlayerDisconnect(playerid, reason)
 {
     new
 		CString[50];
-    format(CString, sizeof(CString), "Player: %s(%d) has left the fun!", pName(playerid), playerid);
+    format(CString, sizeof(CString), "Player: %s(%d) has left ultimate city!", pName(playerid), playerid);
     SendClientMessageToAll(COLOR_GREY, CString);
 
 	new File[50]; format(File, sizeof(File), PFiles, pName(playerid));
